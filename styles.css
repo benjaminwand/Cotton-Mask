@@ -1,17 +1,32 @@
 body {
-  font-size: calc(16px + (24 - 12) * ((100vw - 320px) / (1600 - 320)));
+  font-size: calc(18px + (22 - 18) * ((100vw - 320px) / (1600 - 320)));
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 30ch;
+}
+
+figure {
+  margin: 1em;
 }
 
 img {
   max-width: 100%;
   border-radius: 8px;
+  margin: 0;
 }
 
-@media (min-width: 25em) {
-  img {
-    max-width: 300px;
-    //  width: 50%;
-    float: right;
-    margin: 0 0 1em 1em;
-  }
+p {
+  margin: 1em;
 }
