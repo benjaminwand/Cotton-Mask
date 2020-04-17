@@ -47,6 +47,19 @@ img {
 [id^="drop"] {
   display: none;
 }
+/* Styling the toggle lable */
+.toggle {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  border: none;
+  background-color: white;
+  border-radius: 8px;
+}
+/* Display Dropdown when clicked on Parent Lable */
+[id^="drop"]:checked + ul {
+  display: block;
+}
 
 #logo {
   padding: 0;
@@ -83,23 +96,8 @@ nav ul li {
   width: 100%;
 }
 
-/* Styling the toggle lable */
-.toggle {
-  display: block;
-  padding: 1em;
-  text-decoration: none;
-  border: none;
-  background-color: white;
-  border-radius: 8px;
-}
-
 nav img {
   border-radius: 0;
   margin: 0;
   padding: 0;
-}
-
-/* Display Dropdown when clicked on Parent Lable */
-[id^="drop"]:checked + ul {
-  display: block;
 }
