@@ -35,3 +35,57 @@ img {
   border-radius: 8px;
   margin: 0;
 }
+
+/* -------- navigation -----------*/
+.toggle,
+[id^="drop"] {
+  display: none;
+}
+
+#logo {
+  padding: 0;
+  float: left;
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  width: 100%;
+}
+nav label {
+  float: right;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+/* Hide the navigation menu by default */
+nav ul {
+  display: none;
+  float: right;
+}
+/* Change menu item's width to 100% */
+nav ul li {
+  list-style: none;
+  width: 100%;
+}
+
+/* Styling the toggle lable */
+.toggle {
+  display: block;
+  padding: 14px 20px;
+  text-decoration: none;
+  border: none;
+}
+
+nav img {
+  border-radius: 0;
+  margin: 0;
+}
+
+/* Display Dropdown when clicked on Parent Lable */
+[id^="drop"]:checked + ul {
+  display: block;
+}
