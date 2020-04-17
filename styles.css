@@ -89,7 +89,7 @@ nav a {
 nav ul {
   display: none;
   float: right;
-  background-color: white;
+  background-color: lightgrey;
   padding: 1em;
   border-radius: 8px;
 }
@@ -103,4 +103,12 @@ nav img {
   border-radius: 0;
   margin: 0 1em 0 0;
   padding: 0;
+}
+
+.red {
+  color: red;
+}
+
+.center {
+  text-align: center;
 }
