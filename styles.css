@@ -76,7 +76,6 @@ nav {
 }
 nav label {
   float: right;
-  //text-align: right;
   padding: 0;
   line-height: 1;
 }
@@ -89,9 +88,11 @@ nav a {
 nav ul {
   display: none;
   float: right;
-  background-color: lightgrey;
+  background-color: #eee;
   padding: 1em;
+  margin: 0;
   border-radius: 8px;
+  font-family: sans-serif;
 }
 /* Change menu item's width to 100% */
 nav ul li {
