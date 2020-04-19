@@ -126,3 +126,7 @@ td {
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
+thead,
+tr > td:first-child {
+  font-weight: bold;
+}
