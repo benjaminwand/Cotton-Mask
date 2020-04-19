@@ -43,6 +43,14 @@ img {
   margin: 0;
 }
 
+#logo,
+#logo img {
+  padding: 0;
+  margin: 0;
+  float: left;
+  max-width: 40%;
+}
+
 /* -------- navigation -----------*/
 .toggle,
 [id^="drop"] {
@@ -60,12 +68,6 @@ img {
 /* Display Dropdown when clicked on Parent Lable */
 [id^="drop"]:checked + ul {
   display: block;
-}
-
-#logo {
-  padding: 0;
-  float: left;
-  background-color: white;
 }
 
 nav {
