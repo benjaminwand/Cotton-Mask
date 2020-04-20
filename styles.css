@@ -132,3 +132,18 @@ thead,
 tr > td:first-child {
   font-weight: bold;
 }
+
+@media print {
+  body {
+    font-size: 12px;
+  }
+  .no-print {
+    display: none;
+  }
+  .container > * {
+    flex-basis: 10ch;
+  }
+  section {
+    page-break-inside: avoid;
+  }
+}
