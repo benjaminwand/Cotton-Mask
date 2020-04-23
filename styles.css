@@ -141,6 +141,12 @@ tr > td:first-child {
   display: block;
 }
 
+/* --- img in table --- */
+table img {
+  margin-left: 10%;
+  margin-top: -350px;
+}
+
 /* --- print media query --- */
 @media print {
   body {
