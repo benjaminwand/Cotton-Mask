@@ -16,15 +16,14 @@ h2 {
   max-width: 80%;
 }
 
+/* --- relevant for Benjamins instructions --- */
 p,
 figure {
   margin: 0;
 }
-
 .em p {
   margin: 1em;
 }
-
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -36,13 +35,21 @@ figure {
   flex-basis: 30ch;
   margin: 0 1rem 1rem 0;
 }
-
 img {
   max-width: 100%;
   border-radius: 8px;
   margin: 0;
 }
 
+/* --- random item styling --- */
+.red {
+  color: red;
+}
+.center {
+  text-align: center;
+}
+
+/* -------- navigation -----------*/
 #logo,
 #logo img {
   padding: 0;
@@ -51,7 +58,6 @@ img {
   max-width: 40%;
 }
 
-/* -------- navigation -----------*/
 .toggle,
 [id^="drop"] {
   display: none;
@@ -96,7 +102,6 @@ nav ul {
   border-radius: 8px;
   font-family: sans-serif;
 }
-/* Change menu item's width to 100% */
 nav ul li {
   list-style: none;
   width: 100%;
@@ -108,14 +113,7 @@ nav img {
   padding: 0;
 }
 
-.red {
-  color: red;
-}
-
-.center {
-  text-align: center;
-}
-
+/* --- table styling --- */
 table,
 th,
 td {
@@ -133,6 +131,17 @@ tr > td:first-child {
   font-weight: bold;
 }
 
+/* --- hide and show images in table --- */
+.hide-image {
+  display: none;
+  z-index: 100;
+  position: absolute;
+}
+.preview:hover .hide-image {
+  display: block;
+}
+
+/* --- print media query --- */
 @media print {
   body {
     font-size: 12px;
@@ -146,14 +155,4 @@ tr > td:first-child {
   section {
     page-break-inside: avoid;
   }
-}
-
-/*--- hide and show images in table --- */
-.hide-image {
-  display: none;
-  z-index: 100;
-  position: absolute;
-}
-.preview:hover .hide-image {
-  display: block;
 }
