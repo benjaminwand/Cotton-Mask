@@ -147,3 +147,13 @@ tr > td:first-child {
     page-break-inside: avoid;
   }
 }
+
+/*--- hide and show images in table --- */
+.hide-image {
+  display: none;
+  z-index: 100;
+  position: absolute;
+}
+.preview:hover .hide-image {
+  display: block;
+}
