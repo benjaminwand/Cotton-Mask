@@ -49,15 +49,26 @@ img {
   text-align: center;
 }
 
-/* -------- navigation -----------*/
+/* --- logo and text visibility --- */
 #logo,
 #logo img {
   padding: 0;
   margin: 0;
   float: left;
-  max-width: 40%;
+  max-width: calc(70px + (120 - 70) * ((100vw - 320px) / (1600 - 320)));
+  z-index: -10;
+  position: fixed;
+}
+p,
+table,
+h2,
+h3,
+ol,
+ul {
+  background: rgba(255, 255, 255, 0.7);
 }
 
+/* -------- navigation -----------*/
 .toggle,
 [id^="drop"] {
   display: none;
