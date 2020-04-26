@@ -163,6 +163,7 @@ section {
 table img {
   margin-left: 10%;
   margin-top: -350px;
+  max-width: 85%;
 }
 
 /* --- print media query --- */
