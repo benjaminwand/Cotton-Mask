@@ -166,6 +166,14 @@ table img {
   max-width: 85%;
 }
 
+/* --- margin on sides for wide screens --- */
+@media screen and (min-width: 700px) {
+  main {
+    margin-left: calc(1% + (70 - 1) * ((100vw - 700px) / (3000 - 700)));
+    margin-right: calc(1% + (70 - 1) * ((100vw - 700px) / (3000 - 700)));
+  }
+}
+
 /* --- print media query --- */
 @media print {
   body {
