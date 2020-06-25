@@ -14,8 +14,14 @@
     <div id="logo"><img src="pics/logo.png" alt="logo" /></div>
     <nav class="no-print">
       <label for="drop" class="toggle">
-        <img src="pics/menu.png" alt="About Me"
-      /></label>
+        <picture>
+          <source
+            srcset="pics/menu_dark.png"
+            media="(prefers-color-scheme: dark)"
+          />
+          <img src="pics/menu.png" alt="About Me" />
+        </picture>
+      </label>
       <input type="checkbox" id="drop" />
       <ul>
         <li><a href="index.html">Startseite</a></li>
