@@ -70,6 +70,13 @@ ul {
   background: rgba(255, 255, 255, 0.7);
 }
 
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
 /* -------- navigation -----------*/
 .toggle,
 [id^="drop"] {
@@ -99,10 +106,6 @@ nav label {
   float: right;
   padding: 0;
   line-height: 1;
-}
-
-nav a {
-  text-decoration: none;
 }
 
 /* Hide the navigation menu by default */
