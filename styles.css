@@ -15,7 +15,7 @@ h1 {
 h2 {
   text-align: center;
   margin: 1.5em auto 1em auto;
-  max-width: 80%; 
+  max-width: 80%;
 }
 
 /* --- relevant for Benjamins instructions --- */
@@ -74,7 +74,7 @@ ul {
 a {
   text-decoration: none;
 }
-a:hover {
+a:hover, a:focus {
   text-decoration: underline;
 }
 
