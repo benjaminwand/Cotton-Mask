@@ -85,9 +85,6 @@ nav {
   position: fixed;
   width: 100%;
 }
-nav label {
-  display: none;
-}
 nav input[type="checkbox"] {
   -moz-appearance:initial;
   margin: 0 2rem 0 0;
