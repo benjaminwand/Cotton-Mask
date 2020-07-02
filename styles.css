@@ -79,56 +79,47 @@ a:hover, a:focus {
 }
 
 /* -------- navigation -----------*/
-.toggle,
-[id^="drop"] {
-  display: none;
-}
-/* Styling the toggle lable */
-.toggle {
-  display: block;
-  padding: 1em;
-  text-decoration: none;
-  border: none;
-  background-color: white;
-  border-radius: 8px;
-}
-/* Display Dropdown when clicked on Parent Lable */
-[id^="drop"]:checked + ul {
-  display: block;
-}
-
 nav {
   margin: 0;
   padding: 0;
   position: fixed;
   width: 100%;
 }
-nav label {
+nav input[type="checkbox"] {
+  -moz-appearance:initial; /* needed to show the image in firefox */
+  margin: 1rem 3rem 0 0;
   float: right;
-  padding: 0;
-  line-height: 1;
 }
+nav input[type=checkbox]::before {
+  content: url(pics/menu.png);
+  display:inline-block;
+  background: white;
+}
+nav input[type=checkbox]:checked::before { /*insert close image */ }​
 
-/* Hide the navigation menu by default */
-nav ul {
+/* Display Dropdown when clicked on checkbox */
+[id^="drop"] + ul {
   display: none;
-  float: right;
-  background-color: #eee;
-  padding: 1em;
-  margin: 0;
-  border-radius: 8px;
-  font-family: sans-serif;
 }
-nav ul li {
-  list-style: none;
-  width: 100%;
+[id^="drop"]:checked + ul {
+  display: block;
 }
 
-nav img {
-  border-radius: 0;
-  margin: 0 1em 0 0;
-  padding: 0;
-}
+/* navigation list */
+  nav ul {
+    display: none;
+    float: right;
+    background-color: #eee;
+    padding: 1em;
+    margin: 0;
+    border-radius: 8px;
+    font-family: sans-serif;
+  }
+  nav ul li {
+    list-style: none;
+    width: 100%;
+  }
+
 
 /* --- table styling --- */
 table,
@@ -209,8 +200,9 @@ table img {
   ul {
     background: rgba(51, 51, 51, 0.7);
   }
-  .toggle {
-    background-color: #333;
+  nav input[type=checkbox]::before {
+    content: url(pics/menu_dark.png);
+    background: #333;
   }
   nav ul {
     background-color: black;
