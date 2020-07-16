@@ -87,8 +87,11 @@ nav {
 }
 nav input[type="checkbox"] {
   -moz-appearance:initial; /* needed to show the image in firefox */
-  margin: 1rem 3rem 0 0;
+
+  margin: 1rem 2rem 0 0;
   float: right;
+  width: 24px;
+  height: 24px;
 }
 nav input[type=checkbox]::before {
   content: url(pics/menu.png);
@@ -97,7 +100,7 @@ nav input[type=checkbox]::before {
 }
 nav input[type=checkbox]:checked::before { /*insert close image */ }​
 
-/* Display Dropdown when clicked on checkbox */
+/* display dropdown when clicked on checkbox */
 [id^="drop"] + ul {
   display: none;
 }
@@ -130,9 +133,10 @@ td {
 table {
   border-collapse: collapse;
 }
-td {
+td,th  {
   padding-left: 0.5em;
   padding-right: 0.5em;
+  text-align: left;
 }
 thead,
 tr > td:first-child {
