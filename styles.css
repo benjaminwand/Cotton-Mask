@@ -98,6 +98,7 @@ nav input[type="checkbox"]::before {
   content: url(pics/menu.png);
   display: inline-block;
   background: white;
+  background-position: -2px -2px;
 }
 nav input[type="checkbox"]:checked::before {
   content: url(pics/menu_open.png);
