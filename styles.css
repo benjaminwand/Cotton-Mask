@@ -68,7 +68,7 @@ h2,
 h3,
 ol,
 ul {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 a {
@@ -116,13 +116,13 @@ nav input[type="checkbox"]:checked::before {
 nav ul {
   display: none;
   float: right;
-  background-color: #eee;
   padding: 1em;
   margin: 0;
   border-radius: 8px;
   font-family: sans-serif;
 }
 nav ul li {
+  background-color: inherit;
   list-style: none;
   width: 100%;
 }
@@ -209,12 +209,9 @@ table img {
   h3,
   ol,
   ul {
-    background: rgba(51, 51, 51, 0.7);
+    background: rgba(51, 51, 51, 0.8);
   }
 
-  ​nav ul {
-    background-color: black;
-  }
   nav input[type="checkbox"]::before {
     content: url(pics/menu_dark.png);
     background: #333;
