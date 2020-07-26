@@ -89,10 +89,10 @@ nav {
 nav input[type="checkbox"] {
   -moz-appearance: initial; /* needed to show the image in firefox */
 
-  margin: 1rem 2rem 0 0;
+  margin: 1rem 3rem 0 0;
   float: right;
-  width: 24px;
-  height: 24px;
+  width: 0;
+  height: 0;
 }
 nav input[type="checkbox"]::before {
   content: url(pics/menu.png);
@@ -102,6 +102,7 @@ nav input[type="checkbox"]::before {
 }
 nav input[type="checkbox"]:checked::before {
   content: url(pics/menu_open.png);
+  background-position: -2px -2px;
 }
 ​
 
