@@ -11,11 +11,13 @@
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
-    <div id="logo"><img src="../pics/logo.png" alt="logo" /></div>
+    <header>
+      <img id="logo" src="../pics/logo.png" alt="logo" />
 
-    <nav class="no-print">
-      <input type="checkbox" id="drop" aria-label="toggle menu" />
-      <ul>
+      <input type="checkbox" name="toggle" id="toggle" />
+      <label for="toggle"></label>
+
+      <ul class="menu-list">
         <li><a href="../index.html">Startseite</a></li>
         <li><a href="../tabelle.html">Tabelle</a></li>
         <li>
@@ -33,10 +35,10 @@
         </li>
         <li><a href="../kontakt.html">Kontakt</a></li>
       </ul>
-    </nav>
-    <main>
-      <h1>So erstellen Sie Ihre eigene Maske</h1>
 
+      <h1>So erstellen Sie Ihre eigene Maske</h1>
+    </header>
+    <main>
       <section class="em">
         <p>
           Step-by-Stept von Michael Koerfer aka
