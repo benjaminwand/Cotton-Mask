@@ -139,16 +139,49 @@ a:focus {
 }
 
 /* --- table styling --- */
-table,
-th,
-td {
-  border: 1px solid black;
-}
+
 table {
   border-collapse: collapse;
+  position: relative;
+  margin: 0;
+  border: none;
+  border-collapse: separate;
+  border-spacing: 0;
+  table-layout: fixed;
+  border: 1px solid black;
 }
+table thead th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: white;
+}
+
+table td {
+  background: #fff;
+  padding: 4px 5px;
+  text-align: center;
+}
+
+table thead th:first-child {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 2;
+}
+table tbody th {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  background: white;
+  z-index: 1;
+}
+
+
 td,
 th {
+  border: 1px solid black;
   padding-left: 0.5em;
   padding-right: 0.5em;
   text-align: left;
@@ -156,6 +189,13 @@ th {
 thead,
 tr > td:first-child {
   font-weight: bold;
+}
+
+table thead th:first-child, table tbody td:first-child {
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  z-index: 2;
 }
 
 /* --- hide and show images in table --- */
