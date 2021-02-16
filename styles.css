@@ -19,15 +19,15 @@ header #logo {
 
 /* -------- navigation -----------*/
 .menu-list {
-position: absolute;
-top: -13em;
-left: 0;
-width: 100%;
-height: 13em;
-padding: 20px;
-margin: 0;
-overflow: hidden;
-box-sizing: border-box;
+  position: absolute;
+  top: -13em;
+  left: 0;
+  width: 100%;
+  height: 13em;
+  padding: 20px;
+  margin: 0;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 #toggle:checked ~ .menu-list {
@@ -35,33 +35,38 @@ box-sizing: border-box;
 }
 
 #toggle {
-  position:absolute;
-  left:-100%;
-  top:-100%;
+  position: absolute;
+  cursor: pointer;
+  left: -100%;
+  top: -100%;
 }
 
 #toggle + label {
-  position:absolute;
-  cursor:pointer;
+  position: absolute;
+  padding: 8px 10px;
   background: royalblue;
   border-radius: 3px;
-  padding: 8px 10px;
-  color: #FFF;
+  color: #fff;
+  cursor: pointer;
   margin: 1em;
-  transition:all 500ms ease;
+  transition: all 500ms ease;
 }
 #toggle + label:after {
-  content:"Menu"
+  content: "Menu";
 }
 
 main {
-transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 }
-#toggle:checked + label:after {
-  content:"Close Menu"
+#toggle:checked ~ .menu-list {
+  top: 0;
 }
 #toggle:checked ~ h1 {
   margin-top: 13rem;
+}
+
+#toggle:checked + label:after {
+  content: "Close Menu";
 }
 
 /* navigation list */
@@ -76,7 +81,6 @@ transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
   list-style: none;
   width: 100%;
 }
-
 
 /* --- general --- */
 h1 {
