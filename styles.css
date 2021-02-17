@@ -260,4 +260,14 @@ table img {
   .red {
     color: #f33;
   }
+
+  table thead th {
+    background-color: #333;
+    color: white;
+  }
+  td, th {
+border: 1px solid white;
+}
+table td {
+background: #333;}
 }
