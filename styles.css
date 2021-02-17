@@ -161,7 +161,6 @@ table thead th {
 table td {
   background: #fff;
   padding: 4px 5px;
-  text-align: center;
 }
 
 table thead th:first-child {
