@@ -178,7 +178,6 @@ table tbody th {
   z-index: 1;
 }
 
-
 td,
 th {
   border: 1px solid black;
@@ -191,7 +190,8 @@ tr > td:first-child {
   font-weight: bold;
 }
 
-table thead th:first-child, table tbody td:first-child {
+table thead th:first-child,
+table tbody td:first-child {
   position: -webkit-sticky;
   position: sticky;
   left: 0;
@@ -265,9 +265,11 @@ table img {
     background-color: #333;
     color: white;
   }
-  td, th {
-border: 1px solid white;
-}
-table td {
-background: #333;}
+  td,
+  th {
+    border: 1px solid white;
+  }
+  table td {
+    background: #333;
+  }
 }
