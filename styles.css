@@ -20,10 +20,10 @@ header #logo {
 /* -------- navigation -----------*/
 .menu-list {
   position: absolute;
-  top: -13em;
+  top: min(-13rem, -264px);
   left: 0;
   width: 100%;
-  height: 13em;
+  height: max(13rem, 264px);
   padding: 20px;
   margin: 0;
   overflow: hidden;
@@ -50,6 +50,7 @@ header #logo {
   cursor: pointer;
   margin: 1em;
   transition: all 500ms ease;
+  min-height: 44px;
 }
 #toggle + label:after {
   content: "Menu";
@@ -62,7 +63,7 @@ main {
   top: 0;
 }
 #toggle:checked ~ h1 {
-  margin-top: 13rem;
+  margin-top: calc(max(13rem, 44px) + 1em);
 }
 
 #toggle:checked + label:after {
@@ -80,6 +81,7 @@ main {
   background-color: inherit;
   list-style: none;
   width: 100%;
+  min-height: 44px;
 }
 
 /* --- general --- */
