@@ -42,6 +42,7 @@ header #logo {
 }
 
 #toggle + label {
+  display: block;
   position: absolute;
   padding: 8px 10px;
   background: royalblue;
