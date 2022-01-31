@@ -4,6 +4,7 @@ body {
   line-height: 1.5;
   -ms-scroll-snap-type: y proximity;
   scroll-snap-type: y proximity;
+  margin: 0;
 }
 
 /* --- header --- */
@@ -20,10 +21,10 @@ header #logo {
 /* -------- navigation -----------*/
 .menu-list {
   position: absolute;
-  top: min(-13rem, -264px);
+  top: min(-13rem, -308px);
   left: 0;
   width: 100%;
-  height: max(13rem, 264px);
+  height: max(13rem, 308px);
   padding: 20px;
   margin: 0;
   overflow: hidden;
@@ -44,7 +45,7 @@ header #logo {
 #toggle + label {
   display: block;
   position: absolute;
-  padding: 8px 10px;
+  padding: 0 1em;
   background: royalblue;
   border-radius: 3px;
   color: #fff;
@@ -53,18 +54,19 @@ header #logo {
   transition: all 500ms ease;
   min-height: 44px;
 }
+#toggle + label:hover {
+  filter: saturate(2.2);
+}
 #toggle + label:after {
   content: "Menu";
+  vertical-align: -0.4em;
 }
 
-main {
-  transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
-}
 #toggle:checked ~ .menu-list {
   top: 0;
 }
 #toggle:checked ~ h1 {
-  margin-top: calc(max(13rem, 44px) + 1em);
+  margin-top: max(17rem, 308px);
 }
 
 #toggle:checked + label:after {
@@ -97,6 +99,9 @@ h2 {
   text-align: center;
   margin: 1.5em auto 1em auto;
   max-width: 80%;
+}
+main {
+  margin: auto 1em;
 }
 
 /* --- relevant for Benjamins instructions --- */
